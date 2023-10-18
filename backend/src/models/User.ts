@@ -30,4 +30,6 @@ const userSchema = new mongoose.Schema({
         required: true,
     },
     chats: [chatSchema],
-})
+});
+
+export default mongoose.model("User", userSchema);
